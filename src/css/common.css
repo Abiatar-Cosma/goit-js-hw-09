@@ -16,3 +16,45 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* Stilizări pentru butoanele Start și Stop */
+button[data-start],
+button[data-stop] {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 8px; 
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+
+button[data-start]:active,
+button[data-stop]:active {
+  transform: scale(0.95);
+}
+
+
+button[data-start]:hover {
+  background-color: #388E3C;
+}
+
+button[data-stop]:hover {
+  background-color: #D32F2F;
+}
+
+
+button[data-stop] {
+  background-color: #F44336;
+}
+
+
+button:disabled {
+  background-color: #9E9E9E;
+  cursor: not-allowed;
+  box-shadow: none;
+}
